@@ -1,17 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import { baseStyle } from '../../shared/styles';
 import { NeonHeaderProps, StyledNeonHeaderProps } from '../index.types';
-import { NeonStyleAllPropsRequired } from '../../index.types';
+import { Effect, NeonStyleAllPropsRequired } from '../../index.types';
+import { getStyleForEffect } from '../../../utils/effect';
 
 const StyledH1 = styled.h1.attrs<StyledNeonHeaderProps>(({ headerProps }) => ({
   ...headerProps
 }))<StyledNeonHeaderProps>`
-  ${baseStyle};
+  ${({ neonStyle }) => getStyleForEffect(neonStyle.effect)}
 `;
 
-const NeonH1: React.FC<NeonHeaderProps> = ({ children, color, fontSize, ...headerProps }): React.ReactElement => {
+const NeonH1: React.FC<NeonHeaderProps> = ({
+  children,
+  effect,
+  color,
+  fontSize,
+  ...headerProps
+}): React.ReactElement => {
   const neonStyle: NeonStyleAllPropsRequired = {
+    effect: effect ?? Effect.Glow,
     color,
     fontSize: fontSize ?? '4.2rem'
   };

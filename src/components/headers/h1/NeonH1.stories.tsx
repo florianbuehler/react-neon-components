@@ -1,6 +1,7 @@
 ﻿import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import NeonH1 from './NeonH1';
+import { Effect } from '../../index.types';
 
 export default {
   title: 'Headers/NeonH1',
@@ -9,10 +10,16 @@ export default {
 
 const Template: ComponentStory<typeof NeonH1> = (args) => <NeonH1 {...args} />;
 
-export const Basic = Template.bind({});
-Basic.args = {
+export const Glow = Template.bind({});
+Glow.args = {
   color: 'red',
-  children: 'Neon',
-  onClick: () => console.log('click'),
-  id: 'my id'
+  effect: Effect.Glow,
+  children: 'Neon'
+};
+
+export const Flicker = Template.bind({});
+Flicker.args = {
+  color: 'red',
+  effect: Effect.Flicker,
+  children: 'Neon'
 };

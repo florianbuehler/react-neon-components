@@ -1,11 +1,16 @@
-﻿export type NeonStyle = {
+﻿export enum Effect {
+  Glow = 'Glow',
+  Flicker = 'Flicker'
+}
+
+export type NeonStyle = {
+  effect?: Effect;
   color: string;
   fontSize?: string;
 };
 
 export type NeonStyleAllPropsRequired = {
-  color: string;
-  fontSize: string;
+  [Property in keyof NeonStyle]-?: NeonStyle[Property];
 };
 
 export type StyledNeonProps = {
