@@ -1,1 +1,1 @@
-export { default as NeonH1 } from './NeonH1';
+export { default as NeonH1 } from './h1/NeonH1';

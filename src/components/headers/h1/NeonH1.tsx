@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NeonStyle } from '../index.types';
-import { scaleSize } from '../../utils/cssSize';
+import { NeonStyle } from '../../index.types';
+import { scaleSize } from '../../../utils/cssSize';
 
 const StyledH1 = styled.h1<NeonStyle>`
-  margin-top: 10rem;
   color: #fff;
   font-weight: 400;
   font-size: ${({ fontSize }: NeonStyle) => fontSize};

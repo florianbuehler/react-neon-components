@@ -9,7 +9,10 @@
     "build": "rollup -c rollup.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint src --ext ts,tsx",
-    "fix-eslint": "eslint src --ext ts,tsx --fix"
+    "fix-eslint": "eslint src --ext ts,tsx --fix",
+    "storybook": "start-storybook -p 6006 -s ./.storybook",
+    "build-storybook": "build-storybook -s ./.storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "keywords": [],
   "author": "Florian Bühler",
@@ -25,6 +28,11 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
+    "@storybook/storybook-deployer": "^2.8.10",
     "@types/react": "^17.0.30",
     "@types/styled-components": "^5.1.15",
     "@typescript-eslint/eslint-plugin": "^4.33.0",

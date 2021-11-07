@@ -1,0 +1,11 @@
+.sb-show-main {
+  background: #111;
+}
+
+#root {
+  font-family: 'Roboto', sans-serif;
+  
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 3rem;
+}
