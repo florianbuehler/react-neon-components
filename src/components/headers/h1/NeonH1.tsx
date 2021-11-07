@@ -1,16 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NeonStyle } from '../../index.types';
 import { baseStyle } from '../../shared/styles';
+import { NeonHeaderProps, StyledNeonHeaderProps } from '../index.types';
+import { NeonStyleAllPropsRequired } from '../../index.types';
 
-const StyledH1 = styled.h1<NeonStyle>`
+const StyledH1 = styled.h1.attrs<StyledNeonHeaderProps>(({ headerProps }) => ({
+  ...headerProps
+}))<StyledNeonHeaderProps>`
   ${baseStyle};
 `;
 
-const NeonH1: React.FC<NeonStyle> = ({ children, ...neonStyle }): React.ReactElement => {
-  neonStyle.fontSize = neonStyle.fontSize ?? '4.2rem';
+const NeonH1: React.FC<NeonHeaderProps> = ({ children, color, fontSize, ...headerProps }): React.ReactElement => {
+  const neonStyle: NeonStyleAllPropsRequired = {
+    color,
+    fontSize: fontSize ?? '4.2rem'
+  };
 
-  return <StyledH1 {...neonStyle}>{children}</StyledH1>;
+  return (
+    <StyledH1 neonStyle={neonStyle} headerProps={headerProps}>
+      {children}
+    </StyledH1>
+  );
 };
 
 export default NeonH1;
