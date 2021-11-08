@@ -1,6 +1,6 @@
 ﻿import { css, keyframes } from 'styled-components';
 import { NeonStyleAllPropsRequired, StyledNeonProps } from '../index.types';
-import { text, getTextShadow } from './base';
+import { text, getTextShadow, disableAnimationForReducedMotion } from './base';
 import { scaleSize } from '../../utils/cssSize';
 
 const flickerAnimation = (neonStyle: NeonStyleAllPropsRequired) => keyframes`
@@ -33,10 +33,14 @@ const subtleFlickerAnimation = (neonStyle: NeonStyleAllPropsRequired) => keyfram
 
 export const flicker = css<StyledNeonProps>`
   ${text}
+
   animation: ${({ neonStyle }) => flickerAnimation(neonStyle)} 1.5s infinite alternate;
+  ${disableAnimationForReducedMotion}
 `;
 
 export const subtleFlicker = css<StyledNeonProps>`
   ${text}
+
   animation: ${({ neonStyle }) => subtleFlickerAnimation(neonStyle)} 0.11s ease-in-out infinite alternate;
+  ${disableAnimationForReducedMotion}
 `;

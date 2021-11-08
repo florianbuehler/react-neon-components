@@ -1,6 +1,6 @@
 ﻿import { css, keyframes } from 'styled-components';
 import { NeonStyleAllPropsRequired, StyledNeonProps } from '../index.types';
-import { text, getTextShadow } from './base';
+import { text, getTextShadow, disableAnimationForReducedMotion } from './base';
 import { scaleSize } from '../../utils/cssSize';
 
 const pulsateAnimation = (neonStyle: NeonStyleAllPropsRequired) => keyframes`
@@ -23,5 +23,7 @@ const pulsateAnimation = (neonStyle: NeonStyleAllPropsRequired) => keyframes`
 
 export const pulsate = css<StyledNeonProps>`
   ${text}
+
   animation: ${({ neonStyle }) => pulsateAnimation(neonStyle)} 1.5s infinite alternate;
+  ${disableAnimationForReducedMotion}
 `;
