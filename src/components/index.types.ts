@@ -1,6 +1,8 @@
 ﻿export enum Effect {
-  Glow = 'Glow',
-  Flicker = 'Flicker'
+  Glow = 'glow',
+  Flicker = 'flicker',
+  SubtleFlicker = 'subtle-flicker',
+  Pulsate = 'pulsate'
 }
 
 export type NeonStyle = {

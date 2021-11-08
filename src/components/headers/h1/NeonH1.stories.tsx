@@ -23,3 +23,17 @@ Flicker.args = {
   effect: Effect.Flicker,
   children: 'Neon'
 };
+
+export const SubtleFlicker = Template.bind({});
+Flicker.args = {
+  color: 'red',
+  effect: Effect.SubtleFlicker,
+  children: 'Neon'
+};
+
+export const Pulsate = Template.bind({});
+Flicker.args = {
+  color: 'red',
+  effect: Effect.Pulsate,
+  children: 'Neon'
+};

@@ -1,2 +1,3 @@
 ﻿export { glow } from './glow';
-export { flicker } from './flicker';
+export { flicker, subtleFlicker } from './flicker';
+export { pulsate } from './pulsate';
