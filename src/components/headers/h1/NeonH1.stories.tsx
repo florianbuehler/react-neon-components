@@ -27,7 +27,7 @@ Flicker.args = {
 };
 
 export const SubtleFlicker = Template.bind({});
-Flicker.args = {
+SubtleFlicker.args = {
   color: 'red',
   effect: Effect.SubtleFlicker,
   border: false,
@@ -35,7 +35,7 @@ Flicker.args = {
 };
 
 export const Pulsate = Template.bind({});
-Flicker.args = {
+Pulsate.args = {
   color: 'red',
   effect: Effect.Pulsate,
   border: false,
