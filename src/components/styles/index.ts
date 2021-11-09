@@ -1,3 +1,4 @@
-﻿export { glow } from './glow';
-export { flicker, subtleFlicker } from './flicker';
-export { pulsate } from './pulsate';
+﻿export * from './base';
+export * from './glow';
+export * from './flicker';
+export * from './pulsate';

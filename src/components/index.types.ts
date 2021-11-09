@@ -9,6 +9,7 @@ export type NeonStyle = {
   effect?: Effect;
   color: string;
   fontSize?: string;
+  border?: boolean;
 };
 
 export type NeonStyleAllPropsRequired = {

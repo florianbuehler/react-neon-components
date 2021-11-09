@@ -14,6 +14,7 @@ export const Glow = Template.bind({});
 Glow.args = {
   color: 'red',
   effect: Effect.Glow,
+  border: false,
   children: 'Neon'
 };
 
@@ -21,6 +22,7 @@ export const Flicker = Template.bind({});
 Flicker.args = {
   color: 'red',
   effect: Effect.Flicker,
+  border: false,
   children: 'Neon'
 };
 
@@ -28,6 +30,7 @@ export const SubtleFlicker = Template.bind({});
 Flicker.args = {
   color: 'red',
   effect: Effect.SubtleFlicker,
+  border: false,
   children: 'Neon'
 };
 
@@ -35,5 +38,6 @@ export const Pulsate = Template.bind({});
 Flicker.args = {
   color: 'red',
   effect: Effect.Pulsate,
+  border: false,
   children: 'Neon'
 };

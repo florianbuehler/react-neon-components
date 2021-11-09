@@ -31,3 +31,17 @@ export const disableAnimationForReducedMotion = css<StyledNeonProps>`
     ${textShadow}
   }
 `;
+
+export const border = css<StyledNeonProps>`
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: ${({ neonStyle }) =>
+    `0 0 0.2rem #fff,
+     0 0 0.2rem #fff,
+     0 0 ${scaleSize(neonStyle.fontSize, 0.19)} ${neonStyle.color},
+     0 0 ${scaleSize(neonStyle.fontSize, 0.48)} ${neonStyle.color},
+     0 0 ${scaleSize(neonStyle.fontSize, 0.67)} ${neonStyle.color},
+     inset 0 0 ${scaleSize(neonStyle.fontSize, 0.31)} ${neonStyle.color}
+    `};
+`;
