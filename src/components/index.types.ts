@@ -5,17 +5,20 @@
   Pulsate = 'pulsate'
 }
 
-export type NeonStyle = {
-  effect?: Effect;
+export type NeonProps = {
   color: string;
   fontSize?: string;
+  effect?: Effect;
   border?: boolean;
 };
 
-export type NeonStyleAllPropsRequired = {
-  [Property in keyof NeonStyle]-?: NeonStyle[Property];
+export type NeonStyle = {
+  color: string;
+  fontSize: string;
+  effect: Effect;
+  border: boolean;
 };
 
 export type StyledNeonProps = {
-  neonStyle: NeonStyleAllPropsRequired;
+  neonStyle: NeonStyle;
 };

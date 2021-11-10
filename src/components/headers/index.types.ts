@@ -1,7 +1,7 @@
 ﻿import { HTMLProps } from 'react';
-import { NeonStyle, StyledNeonProps } from '../index.types';
+import { NeonProps, StyledNeonProps } from '../index.types';
 
-export type NeonHeaderProps = NeonStyle & HTMLProps<HTMLHeadingElement>;
+export type NeonHeaderProps = NeonProps & HTMLProps<HTMLHeadingElement>;
 
 export type StyledNeonHeaderProps = {
   headerProps: HTMLProps<HTMLHeadingElement>;

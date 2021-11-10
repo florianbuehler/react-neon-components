@@ -1,9 +1,9 @@
 ﻿import { css, keyframes } from 'styled-components';
-import { NeonStyleAllPropsRequired, StyledNeonProps } from '../index.types';
+import { NeonStyle, StyledNeonProps } from '../index.types';
 import { getTextShadow, disableAnimationForReducedMotion } from './base';
 import { scaleSize } from '../../utils/cssSize';
 
-const pulsateAnimation = (neonStyle: NeonStyleAllPropsRequired) => keyframes`
+const pulsateAnimation = (neonStyle: NeonStyle) => keyframes`
   100% {
     text-shadow: ${getTextShadow(neonStyle)};
   }

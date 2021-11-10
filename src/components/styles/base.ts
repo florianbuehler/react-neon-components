@@ -1,8 +1,8 @@
 ﻿import { css } from 'styled-components';
-import { NeonStyleAllPropsRequired, StyledNeonProps } from '../index.types';
+import { NeonStyle, StyledNeonProps } from '../index.types';
 import { scaleSize } from '../../utils/cssSize';
 
-export const getTextShadow = (neonStyle: NeonStyleAllPropsRequired): string =>
+export const getTextShadow = (neonStyle: NeonStyle): string =>
   `0 0 7px #fff,
    0 0 10px #fff, 
    0 0 21px #fff, 

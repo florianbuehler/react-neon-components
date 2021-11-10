@@ -1,9 +1,9 @@
 ﻿import { css, keyframes } from 'styled-components';
-import { NeonStyleAllPropsRequired, StyledNeonProps } from '../index.types';
+import { NeonStyle, StyledNeonProps } from '../index.types';
 import { getTextShadow, disableAnimationForReducedMotion } from './base';
 import { scaleSize } from '../../utils/cssSize';
 
-const flickerAnimation = (neonStyle: NeonStyleAllPropsRequired) => keyframes`
+const flickerAnimation = (neonStyle: NeonStyle) => keyframes`
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow: ${getTextShadow(neonStyle)};
   }
@@ -13,7 +13,7 @@ const flickerAnimation = (neonStyle: NeonStyleAllPropsRequired) => keyframes`
   }
 `;
 
-const subtleFlickerAnimation = (neonStyle: NeonStyleAllPropsRequired) => keyframes`
+const subtleFlickerAnimation = (neonStyle: NeonStyle) => keyframes`
   100% {
     text-shadow: ${getTextShadow(neonStyle)};
   }
