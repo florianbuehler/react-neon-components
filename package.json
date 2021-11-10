@@ -1,7 +1,7 @@
 {
   "name": "react-neon",
-  "version": "0.0.1",
-  "description": "A small react component library for neon letterings.",
+  "version": "0.1.0",
+  "description": "A small react component library for neon headers.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
