@@ -34,8 +34,8 @@ export const disableAnimationForReducedMotion = css<StyledNeonProps>`
 `;
 
 export const border = css<StyledNeonProps>`
-  border: 0.2rem solid #fff;
-  border-radius: 2rem;
+  border: ${({ neonStyle }) => `${scaleSize(neonStyle.fontSize, 0.06)} solid #fff`};
+  border-radius: ${({ neonStyle }) => scaleSize(neonStyle.fontSize, 0.5)};
   padding: 0.4em;
   box-shadow: ${({ neonStyle }) =>
     `0 0 ${scaleSize(neonStyle.fontSize, 0.05)} #fff,
