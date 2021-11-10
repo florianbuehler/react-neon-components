@@ -20,9 +20,9 @@ const subtleFlickerAnimation = (neonStyle: NeonStyle) => keyframes`
   
  0% {
    text-shadow: 
-     0 0 4px #fff,
-     0 0 10px #fff,
-     0 0 18px #fff,
+     0 0 ${scaleSize(neonStyle.fontSize, 0.06)} #fff,
+     0 0 ${scaleSize(neonStyle.fontSize, 0.15)} #fff,
+     0 0 ${scaleSize(neonStyle.fontSize, 0.27)} #fff,
      0 0 ${scaleSize(neonStyle.fontSize, 0.57)} ${neonStyle.color},
      0 0 ${scaleSize(neonStyle.fontSize!, 1.09)} ${neonStyle.color},
      0 0 ${scaleSize(neonStyle.fontSize!, 1.19)} ${neonStyle.color},

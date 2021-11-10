@@ -3,9 +3,9 @@ import { NeonStyle, StyledNeonProps } from '../index.types';
 import { scaleSize } from '../../utils/cssSize';
 
 export const getTextShadow = (neonStyle: NeonStyle): string =>
-  `0 0 7px #fff,
-   0 0 10px #fff, 
-   0 0 21px #fff, 
+  `0 0 ${scaleSize(neonStyle.fontSize, 0.1)} #fff,
+   0 0 ${scaleSize(neonStyle.fontSize, 0.15)} #fff, 
+   0 0 ${scaleSize(neonStyle.fontSize, 0.31)} #fff, 
    0 0 ${scaleSize(neonStyle.fontSize, 0.62)} ${neonStyle.color}, 
    0 0 ${scaleSize(neonStyle.fontSize!, 1.22)} ${neonStyle.color}, 
    0 0 ${scaleSize(neonStyle.fontSize!, 1.37)} ${neonStyle.color}, 
@@ -38,8 +38,7 @@ export const border = css<StyledNeonProps>`
   border-radius: 2rem;
   padding: 0.4em;
   box-shadow: ${({ neonStyle }) =>
-    `0 0 0.2rem #fff,
-     0 0 0.2rem #fff,
+    `0 0 ${scaleSize(neonStyle.fontSize, 0.05)} #fff,
      0 0 ${scaleSize(neonStyle.fontSize, 0.19)} ${neonStyle.color},
      0 0 ${scaleSize(neonStyle.fontSize, 0.48)} ${neonStyle.color},
      0 0 ${scaleSize(neonStyle.fontSize, 0.67)} ${neonStyle.color},

@@ -10,9 +10,9 @@ const pulsateAnimation = (neonStyle: NeonStyle) => keyframes`
   
  0% {
    text-shadow: 
-     0 0 2px #fff,
-     0 0 4px #fff,
-     0 0 6px #fff,
+     0 0 ${scaleSize(neonStyle.fontSize, 0.03)} #fff,
+     0 0 ${scaleSize(neonStyle.fontSize, 0.06)} #fff,
+     0 0 ${scaleSize(neonStyle.fontSize, 0.09)} #fff,
      0 0 ${scaleSize(neonStyle.fontSize, 0.15)} ${neonStyle.color},
      0 0 ${scaleSize(neonStyle.fontSize, 0.67)} ${neonStyle.color},
      0 0 ${scaleSize(neonStyle.fontSize, 0.82)} ${neonStyle.color},
