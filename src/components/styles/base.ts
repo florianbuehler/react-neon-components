@@ -17,6 +17,7 @@ export const text = css<StyledNeonProps>`
   color: #fff;
   font-weight: 400;
   font-size: ${({ neonStyle }: StyledNeonProps) => neonStyle.fontSize};
+  margin: 0.25rem;
 `;
 
 export const textShadow = css<StyledNeonProps>`
