@@ -37,3 +37,4 @@ import { NeonH1 } from 'react-neon-components';
 - **fontSize** / `string` / *optional* - The font size of the element in `rem`, `em` or `px`. 
 - **effect** / `string` / *optional* - Specifies which effect should be used. Available options are `glow`, `flicker`, `subtle-flicker` and `pulsate`. Defaults to `glow`. 
 - **border** / `boolean` / *optional* - Specifies if a border should be displayed. Defaults to `false`.
+- **reflection** / `boolean` / *optional* - Specifies if a reflection should be displayed. Defaults to `false`.

@@ -29,6 +29,7 @@ Glow.args = {
   color: 'red',
   effect: Effect.Glow,
   border: false,
+  reflection: false,
   children: 'Neon'
 };
 
@@ -37,6 +38,7 @@ Flicker.args = {
   color: 'red',
   effect: Effect.Flicker,
   border: false,
+  reflection: false,
   children: 'Neon'
 };
 
@@ -45,6 +47,7 @@ SubtleFlicker.args = {
   color: 'red',
   effect: Effect.SubtleFlicker,
   border: false,
+  reflection: false,
   children: 'Neon'
 };
 
@@ -53,5 +56,6 @@ Pulsate.args = {
   color: 'red',
   effect: Effect.Pulsate,
   border: false,
+  reflection: false,
   children: 'Neon'
 };

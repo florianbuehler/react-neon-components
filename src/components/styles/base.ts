@@ -45,3 +45,26 @@ export const border = css<StyledNeonProps>`
      inset 0 0 ${scaleSize(neonStyle.fontSize, 0.31)} ${neonStyle.color}
     `};
 `;
+
+export const reflection = css<StyledNeonProps>`
+  position: relative;
+  padding-bottom: ${({ neonStyle }) => neonStyle.fontSize};
+
+  &:before {
+    content: '${({ content }) => content}';
+    top: ${({ neonStyle }) => neonStyle.fontSize};
+    position: absolute;
+    transform: scale(1, -1);
+    backface-visibility: hidden;
+    z-index: -1;
+    text-shadow: ${({ neonStyle }) => `
+      0 0px ${scaleSize(neonStyle.fontSize, 0.07)} #fff,
+      0 2px ${scaleSize(neonStyle.fontSize, 0.1)} #fff,
+      0 4px ${scaleSize(neonStyle.fontSize, 0.51)} #fff,
+      0 10px ${scaleSize(neonStyle.fontSize, 0.4)} ${neonStyle.color},
+      0 10px ${scaleSize(neonStyle.fontSize!, 0.8)} ${neonStyle.color},
+      0 20px ${scaleSize(neonStyle.fontSize!, 0.9)} ${neonStyle.color},
+      0 20px ${scaleSize(neonStyle.fontSize!, 1)} ${neonStyle.color},
+      0 20px ${scaleSize(neonStyle.fontSize!, 1.6)} ${neonStyle.color};`};
+  }
+`;
