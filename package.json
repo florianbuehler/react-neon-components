@@ -1,5 +1,5 @@
 {
-  "name": "react-neon",
+  "name": "react-neon-components",
   "version": "0.1.0",
   "description": "A small react component library to display header elements in different neon optics.",
   "main": "dist/cjs/index.js",

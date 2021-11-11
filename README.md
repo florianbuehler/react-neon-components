@@ -1,8 +1,8 @@
-# react-neon
+# react-neon-components
 
 A small react component library to display header elements in different neon optics.
 
-A storybook with some examples can be found at [https://florianbuehler.github.io/react-neon/](https://florianbuehler.github.io/react-neon/) and the source code at [https://github.com/florianbuehler/react-neon/](https://github.com/florianbuehler/react-neon/).
+A storybook with some examples can be found at [https://florianbuehler.github.io/react-neon-components/](https://florianbuehler.github.io/react-neon-components/) and the source code at [https://github.com/florianbuehler/react-neon-components/](https://github.com/florianbuehler/react-neon-components/).
 
 
 ## Installation
@@ -10,7 +10,7 @@ A storybook with some examples can be found at [https://florianbuehler.github.io
 To install the package, run 
 
 ```
-npm install ...
+npm install react-neon-components --save
 ```
 
 
@@ -30,7 +30,7 @@ import { NeonH1 } from 'react-neon';
 
 ### Available Properties
 
-`react-neon` currently supports the following properties:
+`react-neon-components` currently supports the following properties:
 
 - **color** - `string` [required]: The color of the element. It can be every valid CSS color - e.g. `red`, `rgb(255,0,0)` or `##ff0000`.
 - **fontSize** - `string` [optional]: The font size of the element in `rem`, `em` or `px`. 
