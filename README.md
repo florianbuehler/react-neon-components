@@ -10,16 +10,17 @@ A storybook with some examples can be found at [https://florianbuehler.github.io
 To install the package, run 
 
 ```
-npm install react-neon-components --save
+npm install react-neon-components
 ```
 
 
 ## Usage
 
+The different neon components can be directly imported from `react-neon-components` and can then be used as a standard react component.
+
 ### Example
 ```javascript
-import { NeonH1 } from 'react-neon';
-
+import { NeonH1 } from 'react-neon-components';
 
 <>
   ...
@@ -32,7 +33,7 @@ import { NeonH1 } from 'react-neon';
 
 `react-neon-components` currently supports the following properties:
 
-- **color** - `string` [required]: The color of the element. It can be every valid CSS color - e.g. `red`, `rgb(255,0,0)` or `##ff0000`.
-- **fontSize** - `string` [optional]: The font size of the element in `rem`, `em` or `px`. 
-- **effect** - `string` [optional]: Specifies which effect should be used. Available options are `glow`, `flicker`, `subtle-flicker` and `pulsate`. Defaults to `glow`. 
-- **border** - `boolean` [optional]: Specifies if a border should be displayed. Defaults to `false`.
+- **color** / `string` / *required* - The color of the element. It can be every valid CSS color - e.g. `red`, `rgb(255,0,0)` or `##ff0000`.
+- **fontSize** / `string` / *optional* - The font size of the element in `rem`, `em` or `px`. 
+- **effect** / `string` / *optional* - Specifies which effect should be used. Available options are `glow`, `flicker`, `subtle-flicker` and `pulsate`. Defaults to `glow`. 
+- **border** / `boolean` / *optional* - Specifies if a border should be displayed. Defaults to `false`.

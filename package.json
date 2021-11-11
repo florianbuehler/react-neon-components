@@ -1,7 +1,12 @@
 {
   "name": "react-neon-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A small react component library to display header elements in different neon optics.",
+  "homepage": "https://github.com/florianbuehler/react-neon-components#readme",
+  "repository": "https://github.com/florianbuehler/react-neon-components",
+  "bugs": {
+    "url": "https://github.com/florianbuehler/react-neon-components/issues"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
