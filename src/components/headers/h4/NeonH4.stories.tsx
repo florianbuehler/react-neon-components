@@ -1,14 +1,28 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 import NeonH4 from './NeonH4';
+import { NeonHeaderProps } from '../index.types';
 import { Effect } from '../../../enums';
 
 export default {
   title: 'Headers/NeonH4',
-  component: NeonH4
-} as ComponentMeta<typeof NeonH4>;
+  component: NeonH4,
+  argTypes: {
+    size: {
+      control: { type: 'number', min: 0 }
+    },
+    unit: {
+      options: ['px', 'em', 'rem'],
+      control: { type: 'select' }
+    }
+  }
+} as Meta<NeonHeaderProps & { size: number; unit: string }>;
 
-const Template: ComponentStory<typeof NeonH4> = (args) => <NeonH4 {...args} />;
+const Template: Story<NeonHeaderProps & { size: number; unit: string }> = ({ size, unit, ...args }) => {
+  const fontSize = size && unit ? `${size}${unit}` : undefined;
+
+  return <NeonH4 fontSize={fontSize} {...args} />;
+};
 
 export const Glow = Template.bind({});
 Glow.args = {
