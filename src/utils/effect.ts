@@ -1,5 +1,6 @@
 ﻿import { Interpolation, ThemeProps } from 'styled-components';
-import { Effect, StyledNeonProps } from '../components/index.types';
+import { Effect } from '../enums';
+import { StyledNeonProps } from '../components/index.types';
 import { glow, flicker, subtleFlicker, pulsate } from '../components/styles';
 
 export const getStyleForEffect = (effect: Effect): readonly Interpolation<StyledNeonProps & ThemeProps<any>>[] => {

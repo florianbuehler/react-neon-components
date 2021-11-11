@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import NeonH5 from './NeonH5';
-import { Effect } from '../../index.types';
+import { Effect } from '../../../enums';
 
 export default {
   title: 'Headers/NeonH5',

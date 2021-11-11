@@ -1,9 +1,4 @@
-﻿export enum Effect {
-  Glow = 'glow',
-  Flicker = 'flicker',
-  SubtleFlicker = 'subtle-flicker',
-  Pulsate = 'pulsate'
-}
+﻿import { Effect } from '../enums';
 
 export type NeonProps = {
   color: string;

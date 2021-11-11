@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NeonHeaderProps, StyledNeonHeaderProps } from '../index.types';
-import { Effect, NeonStyle } from '../../index.types';
+import { NeonStyle } from '../../index.types';
+import { Effect } from '../../../enums';
 import { text, border } from '../../styles';
 import { getStyleForEffect } from '../../../utils/effect';
 
