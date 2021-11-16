@@ -4,7 +4,7 @@ A small react component library to display header elements in different neon opt
 
 A storybook with some examples can be found at [https://florianbuehler.github.io/react-neon-components/](https://florianbuehler.github.io/react-neon-components/) and the source code at [https://github.com/florianbuehler/react-neon-components/](https://github.com/florianbuehler/react-neon-components/).
 
-The npm package is published at [https://www.npmjs.com/package/react-neon-components}(https://www.npmjs.com/package/react-neon-components).
+The npm package is published at [https://www.npmjs.com/package/react-neon-components](https://www.npmjs.com/package/react-neon-components).
 
 ## Installation
 
